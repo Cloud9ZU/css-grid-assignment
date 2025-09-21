@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>* {
+        margin: 0;
+        padding: 0.8rem;
+        box-sizing: border-box;
+      }
+      
+      .grid-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        gap: 0.2rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .user-container {
+        background-color: rgb(204, 127, 255);
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        border: solid 1px black;
+      }
+      
+      .circle {
+        border: solid 1px black;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .circle img {
+        border-radius: 100%;
+        width: 150%;
+        height: 150%;
+      }
+      
+      .hobbies {
+        background-color: blue;
+        border: solid 1px black;
+      }
+      
+      .aspiration {
+        background-color: gray;
+        border: solid 1px black;
+      }
+      
+     
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr; 
+        }
+      
+        .user-container {
+          flex-direction: column;
+          text-align: center;
+          grid-column: span 1;
+        }
+      
+        .circle {
+          margin-bottom: 1rem;
+        }
+      }</style>
+  </head>
+  <body>
+    <main>
+      <section class="grid-container">
+        <div class="user-container">
+          <div class="circle">
+           <img src="https://images.unsplash.com/photo-1757647016230-d6b42abc6cc9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D alt="">
+          </div>
+          <div>
+            <h1>Talk about yourself</h1>
+            <p>
+              Hi, I’m <strong>amazu emmanuel</strong>.  
+              I am passionate about technology, creativity, and learning new skills to grow as a developer.
+            </p>
+          </div>
+        </div>
+        <div class="hobbies">
+          <h1>Hobbies</h1><ul>
+            <li>Coding – I love solving problems and building projects.</li>
+            <li>Music – I enjoy listening to and creating melodies.</li>
+            <li>Reading – I enjoy reading non-fiction books.</li>
+          </ul>
+
+        </div>
+        <div class="aspiration">
+          <h1>Aspiration</h1>
+          <p>
+            My aspiration is to become a world-class cloudengineer, creating solutions that impact lives positively.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
